@@ -1,0 +1,31 @@
+﻿@{
+   // int Tabla = 1, Cont ,ANS=0;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowTable</title>
+</head>
+<body>
+<div>
+    
+        @for(int Tabla =1;Tabla<=12;Tabla++)
+        {
+            <h1> Tabla del @Tabla<br/></h1>
+            for (int Cont = 1; Cont <= 12; Cont++)
+            {
+                int ANS = Tabla * Cont;
+               
+                 <p>@Tabla * @Cont = @ANS<br/></p> 
+
+            }
+            
+        }
+        
+    
+</div>
+</body>
+</html>

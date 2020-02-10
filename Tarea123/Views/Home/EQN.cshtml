@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EQN</title>
+    <style media="screen">input::-webkit-outer-spin-button,
+ input::-webkit-inner-spin-button {
+     /* display: none; <- Crashes Chrome on hover */
+     -webkit-appearance: none;
+     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+ }
+
+ input[type=number] {
+     -moz-appearance:textfield; /* Firefox */
+ }</style>
+</head>
+<body>
+
+<div>
+    <form action="\home\EQNC" method="post">
+        x^2<input type="number" name="a"/>
+        x<input type="number" name="b"/>
+        b<input type="number" name="c"/><br/>
+        <input type="submit" name="Calcular" value="Calcular"/>
+
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Saint Seiya</title>
+</head>
+<body>
+<div>
+    <form action="/Home/SaintSeiya" method="post">
+
+        <select id="Mes" name="Mes">
+            <option value="Enero">Enero</option>
+            <option value="Febrero">Febreo</option>
+            <option value="Marzo">Marzo</option>
+            <option value="Abril">Abril</option>
+            <option value="Mayo">Mayo</option>
+            <option value="Junio">Junio</option>
+            <option value="Julio">Julio</option>
+            <option value="Agosto">Agosto</option>
+            <option value="Septiembre">Septiembre</option>
+            <option value="Octubre">Octubre</option>
+            <option value="Noviembre">Noviembre</option>
+            <option value="Diciembre">Diciembre</option>
+        </select>
+        <select id="Dia" name="Dia">
+            @for (int i = 1; i <= 31; i++)
+            {
+                <option value="@i">@i</option>
+            }
+        </select>
+        <button type="submit" name="Seiya">Saber mi signo</button>
+    </form>
+</div>
+</body>
+</html>
